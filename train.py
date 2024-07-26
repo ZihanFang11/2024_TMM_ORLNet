@@ -138,7 +138,7 @@ def parameter_parser():
     parser.add_argument("--weight_decay", type=float, default=0.15, help="Weight decay")
 
     parser.add_argument("--fusion_type", type=str, default="weight")
-    parser.add_argument('--epoch', type=int, default=200, help='Number of epochs to train.')
+    parser.add_argument('--epoch', type=int, default=100, help='Number of epochs to train.')
     parser.add_argument('--gamma', type=float, default=1)
     parser.add_argument('--gamma2', type=float, default=1)
     parser.add_argument('--lr', type=float, default=0.01, help='Initial learning rate.')
