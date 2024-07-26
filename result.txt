@@ -1,12 +1,2 @@
 fusion:weight, gamma:1,gamma2:1 block:3, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:1, ratio:0.1
 MIRFlickr:{'acc': '72.0 (0.0)', 'F1_macro': '7070.95 (712.52)', 'F1_micro': '7105.9 (633.12)', 'precision': '72.15 (0.0)', 'recall': '71.75 (0.0)', 'time': '7.15 (0.0)'}
-fusion:weight, gamma:1,gamma2:1 block:3, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:1, ratio:0.1
-HW:{'acc': '93.11 (0.0)', 'F1_macro': '9086.85 (1009.17)', 'F1_micro': '9095.24 (957.27)', 'precision': '93.38 (0.0)', 'recall': '93.11 (0.0)', 'time': '6.38 (0.0)'}
-fusion:weight, gamma:1,gamma2:1 block:5, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:1, ratio:0.1
-NUSWide20k:{'acc': '70.83 (0.0)', 'F1_macro': '7017.4 (694.72)', 'F1_micro': '7041.79 (672.26)', 'precision': '70.69 (0.0)', 'recall': '70.83 (0.0)', 'time': '20.8 (0.0)'}
-fusion:weight, gamma:10,gamma2:1 block:3, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:1, ratio:0.1
-NUSWIDE:{'acc': '44.72 (0.0)', 'F1_macro': '4217.89 (642.82)', 'F1_micro': '4352.42 (579.6)', 'precision': '43.87 (0.0)', 'recall': '44.72 (0.0)', 'time': '6.39 (0.0)'}
-fusion:weight, gamma:10,gamma2:1 block:3, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:1, ratio:0.1
-WebKB_texas:{'acc': '54.76 (0.0)', 'F1_macro': '2562.56 (622.9)', 'F1_micro': '5844.86 (1054.46)', 'precision': '25.48 (0.0)', 'recall': '21.08 (0.0)', 'time': '2.77 (0.0)'}
-fusion:weight, gamma:10,gamma2:1 block:3, epoch:200, thre1:0.1, thre2:0.1,lr:0.01, lambda:1,alpha:10, ratio:0.1
-Youtube:{'acc': '54.0 (0.0)', 'F1_macro': '3924.92 (1816.98)', 'F1_micro': '4161.55 (1597.04)', 'precision': '54.98 (0.0)', 'recall': '54.0 (0.0)', 'time': '6.55 (0.0)'}
