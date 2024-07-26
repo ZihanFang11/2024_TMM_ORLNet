@@ -86,10 +86,8 @@ def sparse_mx_to_torch_sparse_tensor(sparse_mx):
 
 
 def features_to_Lap(dataset,features, knns):
-    # 遍历每个视图
     laps = []
     for i in range(len(features)):
-        # 遍历每个视图
         direction_judge = os.getcwd() + '/Z_lap_matrix/' + dataset + '/' + 'v' + str(i) + '_knn' + str(
             knns) + '_lap.npz'
         if os.path.exists(direction_judge):
@@ -97,9 +95,7 @@ def features_to_Lap(dataset,features, knns):
             lap = ss.load_npz(direction_judge)
         else:
             print("Constructing the Z laplacian matrix of " + str(i) + "th view of " + dataset)
-            # 返回该视图下每个样本距离最近的前n个样本
             temp = kneighbors_graph(features[i], knns)
-            # 生成矩阵
             temp = sp.coo_matrix(temp)
             # build symmetric adjacency matrix
             temp = temp + temp.T.multiply(temp.T > temp) - temp.multiply(temp.T > temp)
@@ -118,16 +114,13 @@ def features_T_to_Lap(dataset,features_T, knn_G_ratio):
     laps = []
     for i in range(len(features_T)):
         knns = round(knn_G_ratio * features_T[i].shape[0])
-        # 遍历每个视图
         direction_judge =  os.getcwd()+'/G_lap_matrix/' + dataset + '/' + 'v' + str(i) + '_knn' + str(knns) + '_lap.npz'
         if os.path.exists(direction_judge):
             print("Exist the G laplacian matrix of " + str(i) + "th view of " +dataset)
             lap = ss.load_npz(direction_judge)
         else:
             print("Constructing the G laplacian matrix of " + str(i) + "th view of " +dataset)
-
-            # 返回该视图下每个样本距离最近的前n个样本
-            # 生成矩阵
+            temp = kneighbors_graph(features_T[i], knns)
             temp = sp.coo_matrix(temp)
             # build symmetric adjacency matrix
             temp = temp + temp.T.multiply(temp.T > temp) - temp.multiply(temp.T > temp)
