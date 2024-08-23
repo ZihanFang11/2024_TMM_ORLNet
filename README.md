@@ -12,6 +12,8 @@ Additional datasets can be downloaded at the following links:
   author={Fang, Zihan and Du, Shide and Cai, Zhiling and Lan, Shiyang and Wu, Chunming and Tan, Yanchao and Wang, Shiping},
   journal={IEEE Transactions on Multimedia},
   year={2024},
+  volume={26},
+  pages={8889-8901},
   publisher={IEEE}
 }
 ```
