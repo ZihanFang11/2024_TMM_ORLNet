@@ -1,5 +1,5 @@
 
-<h2 align="center"> <a href="https://link.springer.com/article/10.1007/s10462-025-11224-8">Representation Learning Meets Optimization-derived Networks: From Single-view to Multi-view
+<h2 align="center"> <a href="https://ieeexplore.ieee.org/abstract/document/10491326">Representation Learning Meets Optimization-derived Networks: From Single-view to Multi-view
 </a></h2>
 
 <div align="center">
